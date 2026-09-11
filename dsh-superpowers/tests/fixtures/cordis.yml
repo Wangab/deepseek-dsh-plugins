@@ -1,0 +1,4 @@
+- id: skills
+  name: ./skills.mjs
+- id: system-prompt
+  name: ./system-prompt.mjs

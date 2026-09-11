@@ -1,0 +1,28 @@
+# Dependencies and local package-manager caches
+node_modules/
+.pnpm-store/
+.npm/
+
+# Generated package archives
+*.tgz
+
+# Disposable integration-test fixtures
+/tests/.integration-*/
+
+# Test coverage and diagnostic logs
+/coverage/
+/.nyc_output/
+npm-debug.log*
+pnpm-debug.log*
+
+# Local environment secrets (keep example templates)
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+
+# Keep upstream/ assets and package-manager lockfiles tracked.

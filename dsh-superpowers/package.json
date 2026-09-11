@@ -1,0 +1,37 @@
+{
+  "name": "dsh-superpowers",
+  "version": "0.1.0",
+  "description": "Unofficial pinned Superpowers skills bundle for DeepSeek Harness",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "exports": {
+    ".": "./index.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.mjs",
+    "adapter.md",
+    "catalog.json",
+    "cordis.patch.yml",
+    "upstream",
+    "UPSTREAM.json",
+    "README.md",
+    "LICENSE",
+    "tests",
+    "scripts"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check index.mjs",
+    "test:integration": "node tests/integration.mjs",
+    "verify:upstream": "node scripts/provenance.mjs"
+  }
+}
