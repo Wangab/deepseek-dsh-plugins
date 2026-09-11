@@ -1,0 +1,7 @@
+# show-git-branch bundle patch: one Loader row serving both halves.
+# The node half (index.mjs) mounts the HTTP branch route; the same row's
+# package declares dsh.client, so the modules node half scans the browser
+# bundle (lib/client.js) into window.__DSH_BOOT__.
+- insert:
+    - id: show-git-branch
+      name: show-git-branch
