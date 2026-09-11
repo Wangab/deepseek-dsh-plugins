@@ -4,7 +4,7 @@ node_modules/
 .npm/
 
 # Generated package archives
-*.tgz
+# *.tgz
 
 # Disposable integration-test fixtures
 /tests/.integration-*/
